@@ -6,7 +6,11 @@ pipeline {
         echo 'Hello world!!'
       }
     }
- }
+    stage('2') {
+      steps {
+        timestamps()
+      }
+    }
     stage('3') {
       parallel {
         stage('3') {
