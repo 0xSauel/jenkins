@@ -4,6 +4,7 @@ pipeline {
     stage('1') {
       steps {
         echo 'Hello world!!'
+        input(message: 'All is ok?', id: '1', ok: 'Yes')
       }
     }
     stage('3') {
